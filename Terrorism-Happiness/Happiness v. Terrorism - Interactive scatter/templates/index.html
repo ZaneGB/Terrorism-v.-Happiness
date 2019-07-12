@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happiness vs. Everything</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/d3style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Happiness vs. Everything</h1>
+                <hr>
+                <p>
+                <h4>What makes a country happy? Or unhappy?</h4>
+                  We are not just individuals, and an individual is not just a thing in itself. 
+                  Individuals are products of their environments and parts of a society.
+                  For that reason, we can look to societal trends and relate them to individual happiness, or unhappiness.
+                  In this page, we'll look at which countries have the happiest individuals and (along with terrorism)
+                  other trends that may positively or negatively correlate with
+                  said happiness.
+                </p> 
+                <hr>
+                <h5><e>Life expectancy</e></h5>
+                <p>
+                  A country's life expectancy is the highest correlated factor with happiness index score. 
+                  This makes sense as people who tend to live long have good access to food, healthcare, and financial security.
+                  That means less worries and more time to devote to things that make them happy. 
+                  In the chart, you can see the Scandinavian social democracies such as Denmark and Finland
+                  have the highest happiness scores.
+                  
+                  <br>
+                  <br>
+
+                  Caveat here, along with all other 
+                  factors, is that variance among individuals in a country has not been tracked. A country can still have the happiest
+                  individuals in the world along with the unhappiest, but our data doesn't contain that information.
+
+                </p>
+
+                <p>
+                <hr>
+                <h5><e>GDP</e></h5>
+                  Coming in a close second, a country's GDP also has a strong correlation with happiness. 
+                  GDP measures a country's economic activity and represents which countries have the highest value goods
+                  and may suggest which countries have the most disposable income. So money does buy us happiness.
+
+                  <br>
+                  <br>
+
+                  Maybe not all the happiness within us, but financial security and cool things do give us quite a bit.
+                </p>
+
+                <p>
+                  <hr>
+                  <h5><e>Alcoholism Rate</e></h5>
+                  I'd expect alcoholism to have a negative correlation with happiness, but it actually has an insignficant
+                  positive correlation with a p-value of 0.1. Many of the most alcoholic countries tend to be Eastern
+                  European and former Soviet countries with average happiness scores. 
+                  Russia isn't on the scatter plot below, but it would fall in line with these countries.
+
+                  <br>
+                  <br>
+
+                  Maybe legitimate drinking cultures accidentally produce alcohlics just by sheer volume of heavy drinkers.
+                </p>
+
+                <p>
+                  <hr>
+                  <h5><e>Suicide Rate</e></h5>
+                  This trend here makes some sense. Suicide rate has a negative correlation with happiness. 
+                  The weird part, though, is that it's an insignificant correlation (p-value = -0.14).
+                  There can be many explanations for this. 
+                  For example, major variance of happiness can exist within individual countries 
+                  due to social and financial inequalities. We don't have the data here, but it's probably true.
+                </p>
+
+                <p>
+                  <hr>
+                  <h5><e>Terrorist Act Rate</e></h5>
+                  And here's another trend that makes some sense, but not completely. Terrorist acts per 
+                  population has a negative correlation with happiness, but like suicide rate, 
+                  to an insiginficant degree (p-value = -0.13). 
+
+                  <br>
+                  <br>
+                  
+                  Most countries' terrorist rates are close to zero anyway. The more interesting trend is the top 3
+                   most terrorized countries (Iraq, Afghanistan, and Libya) are all countries suffering from recent US 
+                   intervention.
+
+                   <br>
+                   <br>
+
+                   Operation Iraqi freedom is still operating, right?
+                </p>
+
+                <p>
+                  <hr>
+                  <h5><e>Drug Abuse</e></h5>
+                  Now this is where stuff gets weird. Drug abuse has a strong positive correlation with a p-value of 0.58.
+                   And America is #1. We're number 1! We're number 1!
+
+                  <br>
+                  <br>
+                  
+                  USA! USA! USA!
+
+
+                </p>
+
+                <p>
+                  <hr>
+                  <h5><e>Anxiety</e></h5>
+                  Anxiety somehow also has a strong correlation with happiness. When it comes to drug abuse and
+                  anxiety, I hypothesize that many of those suffering from them probably weren't surveyed for the 
+                  happiness report.
+                  <br>
+                  <br>
+                  
+                  Even in lands of opportunity, there can be many people who feel alienated due to financial inequalities,
+                  not living up to certain cultural values, and our overemphasis on the individual over the collective. But 
+                  the topic of loneliness, culture, and financial insecurity are subjects for another time.
+
+
+                </p>
+
+                <hr>
+
+                <p><h5>Click on the axis titles to explore! </h5></p>
+
+                  <hr>
+                <p style="font-size:15px;">
+                    <em>*All data is from 2007-2017</em>
+                </p>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1">
+                <hr>
+                <div class="chart">
+                </div>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                   <hr>
+                   
+                </p>             
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Footer-->
+<div id="footer">
+  <p>The Coding Boot Camp &copy;2019</p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+<script type="text/javascript" src="static/js/app.js"></script>
+
+</body>
+
+</html>
